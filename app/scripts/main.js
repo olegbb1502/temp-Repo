@@ -30,4 +30,25 @@ links.forEach(link=>{
   }
 });
 
+// portfolio info block
+
+let items = document.querySelectorAll('.portfolio__container ul li');
+
+items.forEach(item=>{
+  let info = item.querySelector('.info');
+  let link = item.querySelector('a');
+  let close = info.querySelector('.close');
+  let img = item.querySelector('.picture').getAttribute('src');
+  let infoImage = info.querySelector('.container .img');
+  console.log(img)
+  infoImage.src = img;
+
+  link.addEventListener('click', ()=>{
+    info.classList.add('active');
+  });
+  close.addEventListener('click', ()=>{
+    info.classList.remove('active');
+  });
+});
+
 

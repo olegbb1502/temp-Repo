@@ -46,6 +46,53 @@
             -o-transform: scaleY(1);
             transform: scaleY(1);
           }
+          .info{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            &.active{
+              display: flex;
+            }
+            .container{
+              width: 70%;
+              height: 90%;
+              background: #fff;
+              position: relative;
+              box-sizing: border-box;
+              overflow-y: scroll;
+              .close{
+                position: absolute;
+                top: 12px;
+                right: 12px;
+                cursor: pointer;
+                @include Roboto(bold);
+                font-size: 24px;
+              }
+              img{
+                width: 100%;
+                height: auto;
+              }
+              h4{
+                width: 80%;
+                margin: 20px auto;
+                @include Raleway(bold);
+                font-size: 36px;
+              }
+              p{
+                width: 80%;
+                margin: 0px auto 20px;
+                @include Roboto(500);
+                font-size: 18px;
+              }
+            }
+          }
           .overlay{
             position: absolute;
             width: 100%;
