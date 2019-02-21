@@ -57,7 +57,7 @@ header{
             margin-bottom: 25px;
           }
           a{
-            @include Roboto(300);
+            @include Raleway(300);
             font-size: calculateWidth(18);
             color: $dimgray;
             @media(max-width: 780px){

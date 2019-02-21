@@ -1,0 +1,49 @@
+footer{
+  width: 100%;
+  background: #fff;
+  .footer-content{
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 15px 0;
+    .top{
+      width: 80%;
+      box-sizing: border-box;
+      margin: 15px auto;
+      display: flex;
+      justify-content: space-between;
+      .col{
+        width: 30%;
+        text-align: center;
+        a{
+          @include Raleway(300);
+          font-size: calculateWidth(18);
+          color: $dimgray;
+          @media(max-width: 780px){
+            font-size: tabletWidth(24);
+          }
+          @media(max-width: 500px){
+            font-size: 24px;
+          }
+          &:hover{
+            color: #000;
+          }
+        }
+      }
+    }
+    .bottom{
+      p{
+        text-align: center;
+        @include Raleway(300);
+        font-size: calculateWidth(18);
+        color: $darkgray;
+        @media(max-width: 780px){
+          font-size: tabletWidth(24);
+        }
+        @media(max-width: 500px){
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

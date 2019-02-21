@@ -8,11 +8,6 @@
 @import "helpers/mixin";
 // end helpers
 
-// components
-@import "components/header";
-@import "components/mobile-button";
-// end components
-
 *{
   margin: 0;
   padding: 0;
@@ -34,3 +29,13 @@ ul{
 a{
   text-decoration: none;
 }
+
+// components
+@import "components/header";
+@import "components/footer";
+@import "components/mobile-button";
+// end components
+
+// pages
+@import "pages/main";
+// end pages
