@@ -1,43 +1,45 @@
-main{
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10%;
-  span{
-    @include Roboto(300);
-    font-size: calculateWidth(18);
-    color: #000;
-    margin-bottom: 25px;
-    @media(max-width: 780px){
-      font-size: tabletWidth(24);
+.home{
+  main{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10%;
+    span{
+      @include Roboto(300);
+      font-size: calculateWidth(18);
+      color: #000;
+      margin-bottom: 25px;
+      @media(max-width: 780px){
+        font-size: tabletWidth(24);
+      }
+      @media(max-width: 500px){
+        font-size: 24px;
+      }
     }
-    @media(max-width: 500px){
-      font-size: 24px;
+    h2{
+      text-align: center;
+      @include Raleway(bold);
+      font-size: calculateWidth(48);
+      color: $dimgray;
+      margin-bottom: 45px;
+      @media(max-width: 780px){
+        font-size: tabletWidth(28);
+      }
+      @media(max-width: 500px){
+        font-size: 48px;
+      }
     }
-  }
-  h2{
-    text-align: center;
-    @include Raleway(bold);
-    font-size: calculateWidth(48);
-    color: $dimgray;
-    margin-bottom: 45px;
-    @media(max-width: 780px){
-      font-size: tabletWidth(28);
-    }
-    @media(max-width: 500px){
-      font-size: 48px;
-    }
-  }
-  p{
-    text-align: center;
-    @include Roboto(bold);
-    font-size: calculateWidth(24);
-    color: $dimgray;
-    margin-bottom: 120px;
-    @media(max-width: 780px){
-      font-size: tabletWidth(24);
-    }
-    @media(max-width: 500px){
-      font-size: 24px;
+    p{
+      text-align: center;
+      @include Roboto(bold);
+      font-size: calculateWidth(24);
+      color: $dimgray;
+      margin-bottom: 120px;
+      @media(max-width: 780px){
+        font-size: tabletWidth(24);
+      }
+      @media(max-width: 500px){
+        font-size: 24px;
+      }
     }
   }
 }

@@ -22,6 +22,12 @@ body{
   background: $whitesmoke;
 }
 
+main{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10%;
+}
+
 ul{
   list-style: none;
 }
@@ -38,4 +44,5 @@ a{
 
 // pages
 @import "pages/main";
+@import "pages/portfolio";
 // end pages
