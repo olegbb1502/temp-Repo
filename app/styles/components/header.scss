@@ -50,6 +50,7 @@ header{
           transform: scaleX(0);
           transform-origin: right;
           background: #fff;
+          z-index: 99;
         }
         li{
           margin-left: calculateWidth(80);
