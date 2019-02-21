@@ -12,9 +12,18 @@ footer{
       margin: 15px auto;
       display: flex;
       justify-content: space-between;
+      @media(max-width: 500px){
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
       .col{
         width: 30%;
         text-align: center;
+        @media(max-width: 500px){
+          text-align: left;
+          width: 100%;
+        }
         a{
           @include Raleway(300);
           font-size: calculateWidth(18);
